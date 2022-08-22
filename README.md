@@ -1,19 +1,19 @@
-print("----------------------| CARTERA DIGITAL |----------------------")
-
-
+salario = False
 adc = False
-fatura =[]
 valid_valor = False
 valid_conta = False
+fatura =[]
 vezes = 0
 total = 0
 
 
+print("----------------------| CARTERA DIGITAL |----------------------")
 
-while salario == False
+
+while salario == False:
     sal_mes = input("Salário do mês: R$")
     try:
-        sal_mes = float(valor)
+        sal_mes = float(sal_mes)
         salario = True
     except:
         print("ERRO. Digite apenas números e separe os décimais com '.'.")
@@ -51,12 +51,9 @@ while adc == False:
         valid_valor = False
     else:
         print("ERRRO. Digite apenas 'S' ou 'N'.")
-    
-
-
         
 x = 1
-por = (total * 100)/(sal_mes * x)
+por = (total * 100)/(sal_mes * x)    
 
 print (fatura)
 
